@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity.Interfaces
 {
-    public interface IFigure
+    public interface IFigure : IValidable, IArea, ILength
     {
     }
 }

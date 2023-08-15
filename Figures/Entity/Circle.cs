@@ -40,6 +40,14 @@ namespace Entity
             Radius = r;
         }
 
+        public override bool IsValid()
+        {
+            if (radius <= 0)
+            {
+                return false;
+            }
+            return radius <= 0 ? false : true;
+        }
 
         public override double Area => Math.PI * Math.Pow(radius, 2);
 

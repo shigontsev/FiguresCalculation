@@ -3,7 +3,7 @@ using System;
 
 namespace Entity
 {
-    public abstract class Figure : IFigure, IArea, ILength
+    public abstract class Figure : IFigure
     {
         public Point Position { get; set; }
         public abstract double Area { get; }
@@ -18,5 +18,7 @@ namespace Entity
         {
             Position = position;
         }
+
+        public abstract bool IsValid();
     }
 }

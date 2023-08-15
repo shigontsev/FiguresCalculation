@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class Triangle : Figure, IValidable
+    public class Triangle : Figure
     {
         public double A { get; set; }
 
@@ -26,7 +26,7 @@ namespace Entity
             C = c;
         }
 
-        public bool IsValid()
+        public override bool IsValid()
         {
             return (A + B > C && A + C > B && B + C > A);
         }
